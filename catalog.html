@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <h2 class="visually-hidden">ОСНОВНАЯ НАВИГАЦИЯ</h2>
+    <img src="img/logo.png" alt="main-logo" width="154px" height="64px">
+    <nav class="main-navigation">
+      <ul class="navigation">
+        <li>
+          <a class="menu-item" href="#">Каталог</a>
+        </li>
+        <li>
+          <a class="menu-item" href="#">Доставка и оплата</a>
+        </li>
+        <li>
+          <a class="menu-item" href="#">О Компании</a>
+        </li>
+      </ul>
+      <ul class="user">
+        <li>
+          <a class="button user-button" href="#">Search</a>
+        </li>
+        <li>
+          <a class="button user-button" href="#">Login</a>
+        </li>
+        <li>
+          <a class="button user-button" href="#">Basket</a>
+        </li>
+      </ul>
+    </nav>
+    <p>С 10 до 20, ежедневно</p>
+    <br>
+    <b>8 812 450-25-25</b>
+    <nav class="small-navigation">
+      <h2 class="visually-hidden">Вспомогательная навигация</h2>
+      <ul class="small-navigation-list">
+        <li>
+          <a class="small-navigation-item" href="#">Главная</a>
+        </li>
+        <li>
+          <a class="small-navigation-item" href="#">Каталог</a>
+        </li>
+        <li>
+          <a class="small-navigation-item" href="#">Сливочное</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="catalog-header">Сливочное мороженое</h1>
+
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтры выбора товара</h2>
+      <form action="#" method="POST" name="catalog-filters">
+
+        <label for="sort-field">Сортировка:</label>
+        <select class="catalog-input filter-select" name="sort" id="sort-field">
+          <option value="popular">по популярности</option>
+          <option value="start-cheap">сначала недорогие</option>
+          <option value="start-expensive">сначала дорогие</option>
+          <option value="fat">по жирности</option>
+        </select>
+
+        <label for="price-field">Цена: 100 руб. – 500 руб.</label>
+        <div class="catalog-input filter-price"></div>
+
+        <label>Жирность:</label>
+        <br>
+
+        <label for="fat-0">0%</label>
+        <input type="radio" name="fat" value="0" id="fat-0">
+        <label for="fat-10">до 10%</label>
+        <input type="radio" name="fat" value="10" id="fat-10" checked>
+        <label for="fat-less30">до 30%</label>
+        <input type="radio" name="fat" value="less30" id="fat-less30">
+        <label for="fat-more30">выше 30%</label>
+        <input type="radio" name="fat" value="more30" id="fat-more30">
+        <br>
+
+        <label>Наполнители:</label>
+        <br>
+        <input type="checkbox" name="choco" id="choco-field" checked>
+        <label for="choco-field">шоколадные</label>
+
+        <input type="checkbox" name="sugar" id="sugar-field" checked>
+        <label for="sugar-field">сахарные присыпки</label>
+
+        <input type="checkbox" name="fruit" id="fruit-field">
+        <label for="fruit-field">фрукты</label>
+
+        <input type="checkbox" name="syrup" id="syrup-field">
+        <label for="syrup-field">сиропы</label>
+
+        <input type="checkbox" name="jam" id="jam-field">
+        <label for="jam-field">джемы</label>
+
+        <input class="button filter-button" type="submit" value="Применить" name="submit">
+
+      </form>
+    </section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог Мороженого</h2>
+      <ul class="calalog-list">
+        <li>
+          <img class="catalog-picture" src="img/ice_1.jpg" alt="catalog-ice" width="267" height="267">
+          <b class="catalog-price">310₽
+            <span class="catalog-per-kg">/кг</span>
+          </b>
+          <a class="catalog-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </li>
+        <li>
+          <img class="catalog-picture" src="img/ice_1.jpg" alt="catalog-ice" width="267" height="267">
+          <b class="catalog-price">310₽
+            <span class="catalog-per-kg">/кг</span>
+          </b>
+          <a class="catalog-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </li>
+        <li>
+          <img class="catalog-picture" src="img/ice_1.jpg" alt="catalog-ice" width="267" height="267">
+          <b class="catalog-price">310₽
+            <span class="catalog-per-kg">/кг</span>
+          </b>
+          <a class="catalog-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </li>
+        <li>
+          <img class="catalog-picture" src="img/ice_1.jpg" alt="catalog-ice" width="267" height="267">
+          <b class="catalog-price">310₽
+            <span class="catalog-per-kg">/кг</span>
+          </b>
+          <a class="catalog-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="catalog-pages">
+      <h2 class="visually-hidden">Навигация по страницам каталога</h2>
+      <ul class="pages-list">
+        <li><a class="pages-button" href="#">1</a></li>
+        <li><a class="pages-button" href="#">2</a></li>
+        <li><a class="pages-button" href="#">3</a></li>
+        <li><a class="pages-button" href="#">4</a></li>
+        <li><a class="pages-button" href="#">5</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+
+  <footer class="main-footer">
+    <section class="social">
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="button social-button" href="#">Twitter</a>
+        </li>
+        <li class="social-item">
+          <a class="button social-button" href="#">Instagramm</a>
+        </li>
+        <li class="social-item">
+          <a class="button social-button" href="#">Facebook</a>
+        </li>
+        <li class="social-item">
+          <a class="button social-button" href="#">VK</a>
+        </li>
+      </ul>
+    </section>
+    <section class="docs">
+      <h2 class="visually-hidden">Документы</h2>
+      <ul class="docs-list">
+        <li class="docs-item">
+          <a class="docs-link" href="#">Для поставщиков</a>
+        </li>
+        <li class="docs-item">
+          <a class="docs-link" href="#">О производстве</a>
+        </li>
+        <li class="docs-item">
+          <a class="docs-link" href="#">Наши документы</a>
+        </li>
+        <li class="docs-item">
+          <a class="docs-link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+    </section>
+    <section class="made-by">
+      <h2 class="visually-hidden">Создатели сайта</h2>
+      <img src="img/svg/logo-htmlacademy.svg" alt="logo-htmlacademy" width="108" height="39">
+      <p>Сделано в
+        <a class="made-by-link" href="#">HTML Academy</a> © 2017</p>
+    </section>
+  </footer>
+
+</body>
+
+</html>
